@@ -1,8 +1,13 @@
 create database project;
+
 use project;
+
 select * from data;
+
 set sql_safe_updates=0;
+
 select str_to_date(date,'%m/%d/%y');
+
 select * from data
 where coalesce (id, branch,city,customer_type,gender,product_line,unit_price,
 	quantity,VAT,total,date,time,payment,COGS,gross_percent,gross_income,
@@ -10,8 +15,10 @@ where coalesce (id, branch,city,customer_type,gender,product_line,unit_price,
 
 alter TABLE data
 change `invoice id` ID VARCHAR(30);
+
 alter TABLE data
 change `unit price` unit_price double;
+
 alter TABLE data
 change `customer type` customer_type VARCHAR(30),
 change `product line` product_line VARCHAR(30),
@@ -24,6 +31,7 @@ change graoss_percent gross_percent double;
 
 alter table data
 ADD time_of_day TEXT;
+
 update data
 set time_of_day=case
 	when HOUR(time) < 12 then 'Morning'
@@ -101,7 +109,7 @@ order by max(VAT) desc;
 showing "Good","Bad" .Good if its greater than average sales */
 select product_line, sum(Total) as total_sales,
 case  
-	when sum(total) > avg(total) then "Good"
+    when sum(total) > avg(total) then "Good"
     else "bad" 
     end "type"
     from data
@@ -200,33 +208,33 @@ group by day_name
 order by avg(rating) desc
 limit 3;
 
-/*************************************************************************
+/***************************************************************************************************************************
 == My conclusion after looking into the result of the queries == 
 1. According to sales, 
-	-- Product like Electronic accessories are sold highest,
+    -- Product like Electronic accessories are sold highest,
     -- A,B,C branches sold more than avg sales
     -- Yangon sold the highest product home and lifestyle
     -- January has highest sales on sports and travel
     -- sunday afternoon there are more sales in branch A 
     -- MEMBER customers and females purchase a lot
 2. According to revenue,
-	-- Fashion and accessories has highest revenue 1042.65
-	-- Naypyitaw has highest revenue 1042.65
-	-- JANUARY has highest revenue 116291.86
+    -- Fashion and accessories has highest revenue 1042.65
+    -- Naypyitaw has highest revenue 1042.65
+    -- JANUARY has highest revenue 116291.86
     -- MEMBER type of customer brings more revenue than NORMAL customers 
 3. VAT - amount of tax on purchase,
     -- Highest VAT is on fashion and accessories
     -- Naypyitaw has highest VAT on its product_line
     -- MEMBER type of customers and females pay more VAT
 4. Acoording to rating,
-	-- During afternoon sports and travel is rated most w.r.t product_line 
+    -- During afternoon sports and travel is rated most w.r.t product_line 
     -- Monday has highest average 7.1 rating, w.r.t branch "B" has highest 7.3
     -- Fashion and accessiories are rated most w.r.t branch A
     -- On monday MEMBER type of customer has given highest rating 7.5
-	-- Normal customer gave hight rating in branch c
+    -- Normal customer gave hight rating in branch c
 5. In branch "A" and "B" males and more and in "C" female customers are more
     
-*************************************************************************/
+***************************************************************************************************************************/
 
 
 
