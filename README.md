@@ -3,7 +3,7 @@
 This project involves a comprehensive analysis of Walmart sales data across three branches located in Mandalay, Yangon, and Naypyitaw in Myanmar (Burma). The primary objective is to extract valuable insights from the sales data, including product performance, sales trends, customer behavior, and revenue patterns. The analysis is executed using SQL, with the results visualized in a dynamic and interactive Excel dashboard.
 
 ### Purpose of the Project
-the project aims to provide actionable insights that can help optimize sales strategies, improve customer targeting, and enhance overall profitability. Additionally, this project serves as a demonstration of SQL proficiency in handling real-world data scenarios, focusing on single-table analysis.
+The project aims to provide actionable insights that can help optimize sales strategies, improve customer targeting, and enhance overall profitability. Additionally, this project serves as a demonstration of SQL proficiency in handling real-world data scenarios, focusing on single-table analysis.
 
 ### Data Description
 The dataset comprises sales transactions from three different Walmart branches - Mandalay, Yangon and Naypyitaw capturing a wide range of metrics crucial for analyzing the business's performance. The dataset includes 17 columns and 1,000 rows, with details such as invoice ID, branch location, customer type, product line, unit price, quantity sold, VAT, total cost, and other relevant metrics.
