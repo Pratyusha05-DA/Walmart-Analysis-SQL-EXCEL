@@ -39,4 +39,4 @@ The dataset contains 1,000 sales records, with columns including Branch, Product
 - **Excel**: Interactive dashboard with visualizations for stakeholder insights.
 
 ## Conclusion
-This project presents Walmart with data-driven insights to enhance sales, customer engagement, and operational strategies across branches. Leveraging SQL and Excel, it demonstrates an effective approach to optimizing sales and supporting strategic decision-making in a competitive retail environment.
+This Analysis project provides an in-depth look at sales performance, customer behavior, and product trends across branches, delivering valuable insights for strategic decision-making. Leveraging SQL for data extraction and transformation, along with a dynamic Excel dashboard for visualization, this analysis supports Walmart in optimizing sales strategies, refining customer engagement, and driving profitability. 
