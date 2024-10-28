@@ -40,7 +40,3 @@ The dataset contains 1,000 sales records, with columns including Branch, Product
 
 ## Conclusion
 This project presents Walmart with data-driven insights to enhance sales, customer engagement, and operational strategies across branches. Leveraging SQL and Excel, it demonstrates an effective approach to optimizing sales and supporting strategic decision-making in a competitive retail environment.
-
---- 
-
-This format provides a sharp and professional summary, ideal for conveying your project’s impact and your technical capabilities in an interview. Let me know if further refinement is needed!
