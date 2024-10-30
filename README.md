@@ -28,6 +28,9 @@ The dataset contains 1,000 sales records, with columns including Branch, Product
 - **Payment Preferences**: Cash dominates, with seasonal shifts in credit card and e-wallet use.
 - **Customer Behavior**: Gendered purchasing patterns with peak sales on specific days.
 
+## Excel dashboard
+![Screenshot](https://drive.google.com/uc?export=view&id=1Yd5Hjc3eFaI5iTZrleBJEoJyZe7ljww4)
+
 ## Recommendations
 - **Seasonal Promotions**: Target high-demand categories in low-sales months (Feb/Mar).
 - **Payment Incentives**: Increase e-wallet and credit card usage via targeted discounts.
